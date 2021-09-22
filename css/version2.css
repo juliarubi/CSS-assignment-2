@@ -11,6 +11,7 @@ body {
 
 img {
     max-width: 100%; /* DO NOT delete or change this line */
+    display: block;
 }
 
 header{
@@ -37,58 +38,52 @@ nav ul li {
 
 article {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
 #cougar {
     background: #B26219;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
 }
 
 #lion {
     background: #FFBD82;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
 }
 
 #tiger {
     background: #FFD5AE;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
 }
 
-#cougar .photo {
-  color: #fff;
+section{
+  margin: 2rem;
+  width: 600px
 }
 
 .photo {
   max-width: 600px;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  border: none;
+  box-sizing: border-box;
   color: #000;
+  margin-left: 4rem;
 }
 
 .text {
-    background: #fff;
     max-width: 600px;
-    padding: 2rem;
-    padding-top: 1rem;
     font-size: 1rem;
     line-height: 1.5rem;
-    margin-bottom: 2rem;
     border: none;
     box-sizing: border-box;
     color: #000;
+    margin-right: 4rem;
 }
 
-h2 {
-  text-align: center;
+#cougar .text {
+  color: #FFF;
+}
+
+#cougar .photo {
+  color: #fff;
 }
 
 footer {
@@ -96,7 +91,6 @@ footer {
   padding: 1rem;
   margin:0;
 }
-
 footer p {
   text-align: center;
 }
